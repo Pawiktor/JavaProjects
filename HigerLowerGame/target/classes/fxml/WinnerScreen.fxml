@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="237.0" prefWidth="374.0" spacing="20.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.dev_app.Controllers.WinnerController">
+   <children>
+      <ImageView fitHeight="101.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/winnerCup.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="271.0" spacing="10.0">
+         <children>
+            <Label text="Your Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#saveButton" text="OK" />
+   </children>
+</VBox>

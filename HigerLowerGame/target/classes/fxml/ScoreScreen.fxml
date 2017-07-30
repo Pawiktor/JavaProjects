@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0077b3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.dev_app.Controllers.ScoreScreenController">
+   <top>
+      <Label alignment="BOTTOM_CENTER" prefHeight="71.0" prefWidth="600.0" text="High Scores" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" prefHeight="159.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="400.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" text="1." textFill="#f8e23c">
+                     <font>
+                        <Font name="Eras Demi ITC" size="46.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.35" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="first" contentDisplay="BOTTOM" prefHeight="40.0" prefWidth="234.0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <textFill>
+                        <LinearGradient endX="0.37142857142857133" endY="0.34761904761904755" startX="0.3999999999999999" startY="0.9523809523809523">
+                           <stops>
+                              <Stop color="#c9b81c" />
+                              <Stop color="#c9b81c" offset="0.007662835249042145" />
+                              <Stop color="#ffe013" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="moves1" contentDisplay="BOTTOM" prefHeight="45.0" prefWidth="72.0" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="400.0" spacing="10.0">
+               <children>
+                  <Label text="2." textFill="#ababa9">
+                     <font>
+                        <Font name="Eras Demi ITC" size="40.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.35" />
+                     </effect>
+                  </Label>
+                  <Label fx:id="second" prefHeight="40.0" prefWidth="234.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.4380952380952381" endY="0.28095238095238095" startX="0.4476190476190476" startY="0.9476190476190476">
+                           <stops>
+                              <Stop color="#686262" />
+                              <Stop color="#aeadad" offset="0.9961685823754789" />
+                              <Stop color="#e4e1cd" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="moves2" contentDisplay="BOTTOM" prefHeight="45.0" prefWidth="72.0" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="400.0" spacing="10.0">
+               <children>
+                  <Label text="3." textFill="#a1741f">
+                     <font>
+                        <Font name="Eras Demi ITC" size="34.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.35" />
+                     </effect>
+                  </Label>
+                  <Label fx:id="third" prefHeight="40.0" prefWidth="234.0" textFill="#b87a54">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="moves3" contentDisplay="BOTTOM" prefHeight="45.0" prefWidth="72.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="600.0" spacing="430.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goToMenu" prefHeight="29.0" prefWidth="58.0" text="Menu">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#dataReset" prefHeight="30.0" prefWidth="72.0" text="Reset" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
